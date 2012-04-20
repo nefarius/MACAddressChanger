@@ -44,7 +44,7 @@ END
 STRINGTABLE 
 BEGIN
     IDS_BALLOONTIP          "MAC IDs haben 6-byte (48-bit) Werte.\r\nBeispiele: 00 B0 08 A0 C1 1B, 00 10 10 5C 34 D4"
-    IDS_PROGTITLE           "MAC Address Changer für Windows XP/2003 v1.1"
+    IDS_PROGTITLE           "MAC Address Changer für Windows XP/2003/Vista/7/2008 v1.2"
     IDS_BTNEXIT             "Beende Programm"
     IDS_BTNCHANGE           "Ändere MAC ID"
     IDS_BTNRESET            "Setze MAC ID zurück"
@@ -169,13 +169,13 @@ BEGIN
         BEGIN
             VALUE "Comments", "Angepasst und Übersetzt von Benjamin Höglinger, Original-Code von Nishant Sivakumar"
             VALUE "CompanyName", "Nishant Sivakumar, Benjamin Höglinger"
-            VALUE "FileDescription", "MAC Address Changer for Windows XP/2003"
-            VALUE "FileVersion", "1.0.0.1"
+            VALUE "FileDescription", "MAC Address Changer for Windows XP/2003/Vista/7/2008"
+            VALUE "FileVersion", "1.2.0.0"
             VALUE "InternalName", "MACAddressChanger.exe"
             VALUE "LegalCopyright", "(C) Nishant Sivakumar. All rights reserved."
             VALUE "OriginalFilename", "MACAddressChanger.exe"
-            VALUE "ProductName", "MAC Address Changer für Windows XP/2003"
-            VALUE "ProductVersion", "1.0.0.1"
+            VALUE "ProductName", "MAC Address Changer für Windows XP/2003/Vista/7/2008"
+            VALUE "ProductVersion", "1.2.0.0"
         END
     END
     BLOCK "VarFileInfo"
