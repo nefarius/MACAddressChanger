@@ -142,7 +142,6 @@
   <ItemGroup>
     <None Include="res\MACAddressChanger.ico" />
     <None Include="res\MACAddressChanger.rc2" />
-    <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="MACAddressChanger.rc" />
