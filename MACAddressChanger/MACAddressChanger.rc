@@ -1,0 +1,238 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Neutral) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&Über MACAddressChanger..."
+    IDS_MSGBOXTITLE         "MAC Address Changer "
+    IDS_MACCHANGESUC        "Die MAC ID des Adapters wurde erfolgreich geändert"
+    IDS_MACRESETSUC         "Die MAC ID des Adapters wurde erfolgreich zurückgesetzt"
+    IDS_MACCHANGEHALFSUC    "Der Adapter konnte nicht zurückgesetzt werden, Sie müssen dies manuell vornehmen"
+    IDS_MACRESETHALFSUC     "Der Adapter konnte nicht zurückgesetzt werden, Sie müssen dies zum wiederherstellen der original MAC ID manuell vornehmen"
+    IDS_REGACCESSERR        "Die Operation konnte nicht durchgeführt werden, Sie haben keine Rechte, die Registry zu Ändern"
+    IDS_ADAPINFOERROR       "Es wurden keine Adapter gefunden. Sie haben entweder keine Rechte in der Registry oder keine aktiven Adapter"
+    IDS_SUREEXIT            "Are you sure you want to close the app?"
+    IDS_INVALIDMACERR       "Bitte geben Sie eine gültige MAC ID ein"
+    IDS_BALLOONTITLE        "Geben Sie Ihre bevorzugte MAC ID ein"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BALLOONTIP          "MAC IDs haben 6-byte (48-bit) Werte.\r\nBeispiele: 00 B0 08 A0 C1 1B, 00 10 10 5C 34 D4"
+    IDS_PROGTITLE           "MAC Address Changer für Windows XP/2003 v1.1"
+    IDS_BTNEXIT             "Beende Programm"
+    IDS_BTNCHANGE           "Ändere MAC ID"
+    IDS_BTNRESET            "Setze MAC ID zurück"
+    IDS_STATICCHADAP        "Gefundene Adapter:"
+    IDS_STATICMACADDR       "MAC Adresse:"
+    IDS_ABTBOXTITLE         "Über MAC Address Changer"
+    IDS_STROK               "OK"
+    IDS_TXTVERSION          "Version"
+    IDS_STATICTOPTXT        "Beachten Sie, dass nach Änderung der MAC-Adresse der gewählte Adapter neu gestartet werden muss, um die Änderungen zu übernehmen. Dabei werden alle aktiven Netzwerkverbindungen getrennt."
+END
+
+#endif    // German (Neutral) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\MACAddressChanger.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\MACAddressChanger.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 274, 50
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,20
+    LTEXT           "",IDC_STATIC_ABOUT,46,10,159,25,SS_NOPREFIX
+    DEFPUSHBUTTON   "",IDOK,217,7,50,16,WS_GROUP
+END
+
+IDD_MACADDRESSCHANGER_DIALOG DIALOGEX 0, 0, 309, 105
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO1,93,40,202,128,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT1,93,61,202,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    PUSHBUTTON      "",IDOK,117,81,87,16
+    DEFPUSHBUTTON   "",IDCANCEL,209,81,87,16
+    LTEXT           "",IDC_STATIC_CHOOSEADAPTER,15,42,68,8
+    LTEXT           "",IDC_STATIC_MACADDR,15,64,57,8
+    PUSHBUTTON      "",IDC_BUTTON_RESET,25,81,87,16
+    LTEXT           "",IDC_STATIC_TOPTEXT,49,7,246,26
+    ICON            IDR_MAINFRAME,IDC_STATIC,17,12,20,20
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "Comments", "Angepasst und Übersetzt von Benjamin Höglinger, Original-Code von Nishant Sivakumar"
+            VALUE "CompanyName", "Nishant Sivakumar, Benjamin Höglinger"
+            VALUE "FileDescription", "MAC Address Changer for Windows XP/2003"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "MACAddressChanger.exe"
+            VALUE "LegalCopyright", "(C) Nishant Sivakumar. All rights reserved."
+            VALUE "OriginalFilename", "MACAddressChanger.exe"
+            VALUE "ProductName", "MAC Address Changer für Windows XP/2003"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 267
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 43
+    END
+
+    IDD_MACADDRESSCHANGER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 300
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\MACAddressChanger.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
